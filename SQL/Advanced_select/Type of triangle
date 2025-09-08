@@ -1,0 +1,8 @@
+
+select CASE when a+b <= c or b+c <= a or a+c <=b Then 'Not A Triangle'
+when a!=b and b!=c and a!=c Then 'Scalene'
+when a=b and b=c Then 'Equilateral' 
+when a=b or b=c or a=c THEN 'Isosceles' 
+-- else 'Scalene' 
+end as traingletype 
+from TRIANGLES;
